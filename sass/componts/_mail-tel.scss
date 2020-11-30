@@ -1,0 +1,24 @@
+.nav-contact{
+    display: inline-flex; 
+}
+
+.link-contact{
+    margin-right: 50px;
+}
+
+.link-contact:last-child{
+    margin-right: 0px;
+}
+
+.social-item-nav-svg{
+    height: 12px;
+    width: 16px;
+    fill: var(--main-color-text-gray);
+    margin-right: 10px;
+}
+
+.phone-svg{
+    height: 16px;
+    width: 10px;
+    fill: var(--main-color-text-gray);
+}

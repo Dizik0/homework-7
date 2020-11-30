@@ -1,0 +1,53 @@
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button:not(:last-child){
+    margin-right: 8px;
+}
+
+.btn-footer:focus .social-item-btn,
+.btn-footer:hover .social-item-btn{  
+    fill: var(--accent-color-blue);
+    transition-duration: 300ms;
+    color: var(--accent-color-blue);
+}
+
+.btn-footer:hover{
+    color: var(--accent-color-blue);
+    background-color: var(--background-color-white);
+    transition-duration: 300ms;
+}
+
+.btn-footer{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    padding-right: 63px;
+    color: var(--background-color-white);
+    background-color: var(--accent-color-blue);
+    border: 0;
+    border-radius: 4px;
+    
+}
+
+.services{
+    color: var(--secondary-color-black);
+    background-color: var(--bg-btn-color-white-gray);
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 6px 22px; 
+    transition-duration: 300ms;
+    border: none; 
+    outline: none;   
+} 
+
+.services:hover,
+.services:focus{
+    background-color: var(--accent-color-blue);
+    color: var(--background-color-white);
+}

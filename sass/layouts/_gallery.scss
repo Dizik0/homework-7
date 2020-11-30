@@ -1,0 +1,20 @@
+.our-occupation{
+    margin-top: 94px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-occupation{
+    margin-top: 50px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    position: relative;
+
+
+    &:nth-child(3n + 1){
+        margin-left: 0px;
+    }
+}

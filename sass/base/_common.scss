@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}  
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto', 'sans-serif';
+    font-size: 14px;
+    color: var(--main-color-text-gray);
+}
+
+img{
+    display: block;
+    max-height: 100%;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, ul, p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.classes{
+    color: var(--secondary-color-black);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+}
+
+.link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:focus ,
+.link:hover {
+    color: var(--accent-color-blue);
+}
+
+
