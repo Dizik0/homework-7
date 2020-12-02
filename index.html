@@ -14,21 +14,55 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="nav">
-          <a href="./" class="logo"><span class="logo-blye">Web</span>Studio</a>
-          <ul class="menu">
-            <li class="focus-studio nav-text">
-              <a href="#" class="link focus-studio text-nav">Студия</a>
+        <a href="./" class="logo"><span class="logo-blye">Web</span>Studio</a>
+        <div class="test">
+          <nav class="nav">
+            <ul class="menu">
+              <li class="focus-studio nav-text">
+                <a href="#" class="link focus-studio text-nav">Студия</a>
+              </li>
+              <li class="nav-text">
+                <a href="portfolio.html" class="link text-nav">Портфолио</a>
+              </li>
+              <li class="nav-text">
+                <a href="#contact" class="link text-nav">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="nav-contact">
+            <li class="link-contact">
+              <a href="mailto:info@devstudio.com" class="link link-svg">
+                <svg class="social-item-nav-svg">
+                  <use href="./photo/sprite/symbol-defs.svg#icon-mail"></use>
+                </svg>
+              info@devstudio.com</a>
             </li>
-            <li class="nav-text">
-              <a href="portfolio.html" class="link text-nav">Портфолио</a>
-            </li>
-            <li class="nav-text">
-              <a href="#contact" class="link text-nav">Контакты</a>
+            <li class="link-contact">
+              <a href="tel:+380961111111" class="link link-svg"> 
+                <svg class="social-item-nav-svg phone-svg">
+                  <use href="./photo/sprite/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              +38 096 111 11 11</a>
             </li>
           </ul>
-        </nav>
-        <ul class="nav-contact">
+        </div>
+        <button class="btn-screen">X</button>
+      </div>
+    </header>
+    <div class="screen-box">
+      <div class="screen-box-modal">
+        <ul class="menu-screen">
+          <li class="focus-studio nav-text">
+            <a href="#" class="link focus-studio text-nav">Студия</a>
+          </li>
+          <li class="nav-text">
+            <a href="portfolio.html" class="link text-nav">Портфолио</a>
+          </li>
+          <li class="nav-text">
+            <a href="#contact" class="link text-nav">Контакты</a>
+          </li>
+        </ul>
+        <ul class="nav-contact-screen">
           <li class="link-contact">
             <a href="mailto:info@devstudio.com" class="link link-svg">
               <svg class="social-item-nav-svg">
@@ -45,7 +79,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </div>
     <main>
       <div class="air"></div>
       <section class="hero">

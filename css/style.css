@@ -90,8 +90,8 @@ h1, h2, h3, ul, p{
 
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+
 }
 
 .nav{
@@ -108,7 +108,7 @@ h1, h2, h3, ul, p{
     transition-duration: 300ms;
 }    
 
-.nav-text:last-child {
+/* .nav-text:last-child {
     margin-right: 0px;
 }
 
@@ -118,7 +118,7 @@ h1, h2, h3, ul, p{
 
 .link-contact:last-child{
     margin-right: 0px;
-}
+} */
 
 .logo{
     font-family: 'raleway', 'sans-serif';
@@ -129,7 +129,6 @@ h1, h2, h3, ul, p{
     line-height: 1.23;
     letter-spacing: 0.03em;
     justify-content: center;
-    display: flex;
 }
 
 .text-nav::after {
@@ -145,6 +144,11 @@ h1, h2, h3, ul, p{
     background-color: var(--accent-color-blue);
     pointer-events: none;
     opacity: 0;
+    
+}
+
+.text-nav:not(:last-child){
+    margin-bottom: 0px;
 }
 
 .text-nav:hover::after,
@@ -164,7 +168,39 @@ h1, h2, h3, ul, p{
     color: var(--accent-color-blue);
 }
 
+.screen-box{
+    position: relative;
+}
 
+.screen-box-modal{
+    position: absolute;
+    width: 480px;
+    height: 453px;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(1);
+    background-color: var(--background-color-white);
+    z-index: 54;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+}
+
+.menu-screen{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.nav-contact-screen{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.test{
+    display: none;
+}
+
+.text-nav{
+    margin-bottom: 40px;
+}
 
 
             /* hero */
@@ -244,6 +280,14 @@ h1, h2, h3, ul, p{
     letter-spacing: 0.06em;
     margin-top: 30px;
 } 
+
+.btn-screen{
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-color-white);
+    border: none;
+    justify-content: flex-end;
+}
 
 
 
