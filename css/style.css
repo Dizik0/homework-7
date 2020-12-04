@@ -131,20 +131,12 @@ h1, h2, h3, ul, p{
     justify-content: center;
 }
 
-.text-nav::after {
-    content: "";
-    position: absolute; 
-    margin-top: 25px;
-    border-radius: 2px;
-    border: 2px solid var(--accent-color-blue);
-    display: block;
-    transition-duration: 300ms;
-    left: 0;
-    right: 0;
-    background-color: var(--accent-color-blue);
-    pointer-events: none;
-    opacity: 0;
-    
+.text-nav{
+    margin-bottom: 52px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
 }
 
 .text-nav:not(:last-child){
@@ -154,6 +146,31 @@ h1, h2, h3, ul, p{
 .text-nav:hover::after,
 .text-nav:focus::after{
     opacity: 1;
+}
+
+.text-nav::after {
+    content: "";
+    position: absolute; 
+    margin-top: 8px;
+    border-radius: 2px;
+    border: 2px solid var(--accent-color-blue);
+    display: block;
+    transition-duration: 300ms;
+    left: 165px;
+    right: 165px;
+    background-color: var(--accent-color-blue);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.text-nav.focus-studio::after{
+    right: 185px;
+    left: 185px;
+}
+
+.text-nav.gg::after{
+    right: 170px;
+    left: 170px;
 }
 
 .focus-studio::after{
@@ -170,10 +187,12 @@ h1, h2, h3, ul, p{
 
 .screen-box{
     position: relative;
+    display: none;
 }
 
 .screen-box-modal{
     position: absolute;
+     position: fixed;
     width: 480px;
     height: 453px;
     left: 50%;
@@ -181,7 +200,6 @@ h1, h2, h3, ul, p{
     background-color: var(--background-color-white);
     z-index: 54;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-
 }
 
 .menu-screen{
@@ -198,10 +216,6 @@ h1, h2, h3, ul, p{
     display: none;
 }
 
-.text-nav{
-    margin-bottom: 40px;
-}
-
 
             /* hero */
 
@@ -213,10 +227,13 @@ h1, h2, h3, ul, p{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--bg-color-sektion);
-    width: auto;
-    padding: 200px 0;
+    width: 480px;
+    height: 400px;
+    padding: 118px 0;
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../photo/bg/Img-bg.jpg);
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-box{
@@ -230,10 +247,11 @@ h1, h2, h3, ul, p{
 .hero-text{
     color: var(--background-color-white);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;    
+    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .ability-headlines{
@@ -511,6 +529,15 @@ h1, h2, h3, ul, p{
     margin-right: 10px;
 }
 
+.link-svg{
+    margin-bottom: 16px;
+    margin-right: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+}
+
 .social-link-svg{
     display: flex;
     width: 44px;
@@ -651,7 +678,12 @@ h1, h2, h3, ul, p{
     letter-spacing: 0.03em;
     line-height: 16px;
     text-align: center;
-}
+}   
+
+
+
+
+
 
 .backdrop{
     position: fixed;
@@ -718,17 +750,17 @@ h1, h2, h3, ul, p{
     color: var(--secondary-color-black);
 }
 
+.btn:focus,
+.btn:hover{
+    color: var(--accent-color-blue);
+    background-color: var(--background-color-white);
+}
+
 .mail .btn{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     transition-duration: 300ms;
-}
-
-.btn:focus,
-.btn:hover{
-    color: var(--accent-color-blue);
-    background-color: var(--background-color-white);
 }
 
 .mail{
@@ -813,6 +845,10 @@ h1, h2, h3, ul, p{
     padding-right: 28px;
     margin-top: 20px;
     margin-left: 130px;
+}
+
+.footer .logo{
+    margin-left: 163px;
 }
 
 .social-item-modal{
