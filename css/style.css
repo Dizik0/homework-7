@@ -225,7 +225,7 @@ h1, h2, h3, ul, p{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--bg-color-sektion);
-    width: 480px;
+    width: 100%px;
     height: 400px;
     padding: 118px 0;
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../photo/bg/Img-bg.jpg);
@@ -724,7 +724,7 @@ h1, h2, h3, ul, p{
     height: 609px;
     background-color: var(--background-color-white);
     transition: transform 0.5s;
-    padding-left: 41px;
+    padding-left: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -1008,7 +1008,7 @@ input[type="checkbox"] {
 }
 @media screen and (min-width: 768px){
     .hero{
-        width: 768px;
+        width: 100%;
         height: 400px;
     }
 
@@ -1167,5 +1167,149 @@ input[type="checkbox"] {
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+    }
+}
+@media screen and (min-width: 1200px){
+    .lesson-details{
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .ability-box{
+        margin-left: 30px;
+        flex-basis: calc(100% / 4 - 30px);
+        }
+        
+        .ability{
+            margin-left: -30px;
+            margin-top: -30px;
+        }
+}
+@media screen and (min-width: 1200px){
+    .our-occupation{
+        display: block;
+    }
+
+    .gallery{
+        margin-top: -30px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .img-photo-team{
+        width: 270px;
+        height: 260px;
+    }
+
+    .name-profession{
+        width: 270px;
+    }
+
+    .team{
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .team-photo{
+        margin-top: -10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .clients-box{
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .item-client{
+        flex-basis: calc(100% / 6 - 30px);
+    }
+}
+@media screen and (min-width: 1200px){
+    .footer .logo{
+        margin-left: 0px;
+    }
+
+    .container-footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .footer-logo-link{
+        width: 231px;
+    }
+
+    .contact{
+        text-align: inherit;
+    }
+
+    .mailing{
+        display: flex;
+    }
+
+    .box-footer{
+        margin-left: 70px;
+    }
+
+    .mail-footer{
+        margin-top: 0px;
+        margin-left: 95px;
+    }
+
+    .btn-footer{
+        margin-left: 12px;
+        margin-top: 0px;
+    }
+
+    .container-footer{
+        display: flex;
+    }
+
+    .mail{
+        width: 358px;
+        margin-right: 0px;
+    }
+
+    .footer-clases{
+        font-size: 14px;
+        line-height: 1.333;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}
+@media screen and (min-width: 1200px){
+    .modal{
+        width: 528px;
+        height: 581px;
+    }
+
+    .text-modal{
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        width: 448px;
+    }
+
+    .form-name{
+        width: 448px;
+    }
+
+    .coment{
+        width: 448px;
+    }
+
+    .box-checkbox{
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    .link-modal{
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    .btn-modal{
+        margin-left: 115px;
     }
 }

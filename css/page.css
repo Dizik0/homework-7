@@ -735,7 +735,6 @@ h1, h2, h3, ul, p{
         display: none;
     }
 }
-
 @media screen and (min-width: 768px){
     .btn{
         margin-top: 90px;
@@ -777,7 +776,6 @@ h1, h2, h3, ul, p{
         height: 440px;
     }
 }
-
 @media screen and (min-width: 768px){
     .footer .logo{
         margin-left: 40px;
@@ -842,5 +840,122 @@ h1, h2, h3, ul, p{
     .box-footer{
         margin-top: 0px;
         margin-left: 165px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+
+    .container-footer{
+        width: 1200px;
+    }
+
+    .nav-contact{
+        display: flex;
+        margin-left: 215px;
+    }
+
+    .link-svg{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.333;
+        letter-spacing: 0.02em;
+        
+    }
+
+    .link-contact{
+        margin-left: 30px; 
+        margin-bottom: 0px; 
+    }
+
+    .link-contact:first-child{
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .main{
+      width: 1200px;  
+    }
+    .photo-item{
+        width: 354px;
+        height: 404px;
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc(100% / 3 - 30px);
+    }
+    .photo{
+        width: 370px;
+        height: 294px;
+    }
+
+    .blye-box-gallery-text{
+        width: 370px;
+        height: 294px;
+    }
+
+    .photo-item.kostil{
+        height: 404px;
+    }
+    .gallery{
+        margin-top: 20px;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    .footer .logo{
+        margin-left: 0px;
+    }
+
+    .container-footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .footer-logo-link{
+        width: 231px;
+
+    }
+
+    .contact{
+        text-align: inherit;
+    }
+
+    .mailing{
+        display: flex;
+    }
+
+    .box-footer{
+        margin-left: 70px;
+    }
+
+    .mail-footer{
+        margin-top: 0px;
+        margin-left: 95px;
+    }
+
+    .btn-footer{
+        margin-left: 12px;
+        margin-top: 0px;
+    }
+
+    .address{
+        text-align: inherit;
+    }
+
+    .container-footer{
+        display: flex;
+    }
+
+    .mail{
+        width: 358px;
+        margin-right: 0px;
+    }
+
+    .footer-clases{
+        font-size: 14px;
+        line-height: 1.333;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
     }
 }
