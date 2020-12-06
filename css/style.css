@@ -108,18 +108,6 @@ h1, h2, h3, ul, p{
     transition-duration: 300ms;
 }    
 
-/* .nav-text:last-child {
-    margin-right: 0px;
-}
-
-.link-contact{
-    margin-right: 50px;
-}
-
-.link-contact:last-child{
-    margin-right: 0px;
-} */
-
 .logo{
     font-family: 'raleway', 'sans-serif';
     color: var(--secondary-color-black);
@@ -216,6 +204,93 @@ h1, h2, h3, ul, p{
     display: none;
 }
 
+.link-svg{
+    margin-bottom: 16px;
+    margin-right: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+}
+
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+
+    .screen-box{
+        display: none;
+    }
+    
+    .test{
+        display: flex;
+        align-items: center;
+    }
+
+    .container.header-container{
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+    }
+    
+    .nav-contact{
+        display: block;
+        align-items: center;
+    }
+
+    .text-nav{
+        display: inline;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.02em;   
+    }
+
+    .header{
+        height: 80px;
+    }
+
+    .text-nav::after{
+        left: 0;
+        right: 0;
+    }
+
+    .text-nav.focus-studio::after{
+        left: 0;
+        right: 0;
+    }
+
+    .nav-text:last-child {
+        margin-right: 84px;
+    }
+
+    .link-contact{
+        margin-bottom: 10px;
+    }
+
+    .link-contact:last-child{
+        margin-bottom: 0px;
+    }
+
+    .link-svg{
+        margin-bottom: 0px;
+        margin-right: 0px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.02em;
+    }
+
+    .btn-screen{
+        display: none;
+    }
+
+}
+
 
             /* hero */
 
@@ -306,6 +381,7 @@ h1, h2, h3, ul, p{
     border: none;
     justify-content: flex-end;
 }
+
 
 
 
@@ -529,14 +605,6 @@ h1, h2, h3, ul, p{
     margin-right: 10px;
 }
 
-.link-svg{
-    margin-bottom: 16px;
-    margin-right: 60px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.166;
-    letter-spacing: 0.02em;
-}
 
 .social-link-svg{
     display: flex;

@@ -26,7 +26,7 @@ body{
 img{
     display: block;
     max-height: 100%;
-    height: auto;
+
 }
 
 li{
@@ -345,6 +345,7 @@ h1, h2, h3, ul, p{
 
 .photo{
     width: 100%;
+    object-fit: cover;
 }
 
 .photo-item{
@@ -352,6 +353,7 @@ h1, h2, h3, ul, p{
     width: 450px;
     height: auto;
     margin-top: 50px;
+    
 }
 
 /* .photo-item:not(:nth-child(3n + 1)){
