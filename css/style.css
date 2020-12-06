@@ -1006,7 +1006,6 @@ input[type="checkbox"] {
         display: none;
     }
 }
-
 @media screen and (min-width: 768px){
     .hero{
         width: 768px;
@@ -1056,7 +1055,6 @@ input[type="checkbox"] {
         margin-bottom: 30px;
     }
 }
-
 @media screen and (min-width: 768px){
     .footer .logo{
         margin-left: 40px;
@@ -1116,5 +1114,36 @@ input[type="checkbox"] {
     .box-footer{
         margin-top: 0px;
         margin-left: 165px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+
+    .container-footer{
+        width: 1200px;
+    }
+
+    .nav-contact{
+        display: flex;
+        margin-left: 215px;
+    }
+
+    .link-svg{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.333;
+        letter-spacing: 0.02em;
+        
+    }
+
+    .link-contact{
+        margin-left: 30px; 
+        margin-bottom: 0px; 
+    }
+
+    .link-contact:first-child{
+        margin-left: 0px;
     }
 }
