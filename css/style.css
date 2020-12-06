@@ -829,6 +829,7 @@ h1, h2, h3, ul, p{
     transition-duration: 300ms;
 }
 
+
 .btn-footer{
     position: relative;
     padding-right: 28px;
@@ -969,8 +970,10 @@ input[type="checkbox"] {
     }
 
     .text-nav::after{
+        margin-top: 29px;
         left: 0;
         right: 0;
+
     }
 
     .text-nav.focus-studio::after{
@@ -1082,10 +1085,6 @@ input[type="checkbox"] {
 
     .footer-box-link-btn{
         display: flex;
-    }
-
-    .box-footer{
-        margin-top: 0px;
     }
 
     .mailing{

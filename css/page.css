@@ -304,6 +304,7 @@ h1, h2, h3, ul, p{
 }
 .btn-footer:focus,
 .btn-footer:hover{
+    color: var(--accent-color-blue);
     background-color: var(--background-color-white);
 }
 .btn-footer:focus .social-item-btn,
@@ -333,11 +334,6 @@ h1, h2, h3, ul, p{
     margin-left: auto;
 }
 
-/* .gallery{
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 .link-galery:hover,
 .link-galery:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
@@ -355,14 +351,6 @@ h1, h2, h3, ul, p{
     margin-top: 50px;
     
 }
-
-/* .photo-item:not(:nth-child(3n + 1)){
-    margin-left: 30px;
-}
-
-.photo-item:nth-child(n + 4){
-    margin-top: 30px;
-} */
 
 .containret-text-photo{
     padding: 20px 24px;
@@ -662,4 +650,197 @@ h1, h2, h3, ul, p{
 
 .footer-mail-tel-map{
     margin-bottom: 9px;
+}
+@media screen and (min-width: 768px){
+    .main{
+        width: 768px;
+    }
+    .container{
+        width: 768px;
+    }
+
+    .container-footer{
+        width: 768px;
+    }
+
+    .screen-box{
+        display: none;
+    }
+    
+    .test{
+        display: flex;
+        align-items: center;
+    }
+
+    .container.header-container{
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+    }
+    
+    .nav-contact{
+        display: block;
+        align-items: center;
+    }
+
+    .text-nav{
+        display: inline;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.02em;   
+    }
+
+    .header{
+        height: 80px;
+    }
+
+    .text-nav::after{
+        margin-top: 29px;
+        left: 0;
+        right: 0;
+
+    }
+
+    .text-nav.focus-studio::after{
+        left: 0;
+        right: 0;
+    }
+
+    .nav-text:last-child {
+        margin-right: 84px;
+    }
+
+    .link-contact{
+        margin-bottom: 10px;
+    }
+
+    .link-contact:last-child{
+        margin-bottom: 0px;
+    }
+
+    .link-svg{
+        margin-bottom: 0px;
+        margin-right: 0px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.02em;
+    }
+
+    .btn-screen{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .btn{
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    .photo{
+        width: 354px;
+        height: 294px;
+    }
+
+    .blye-box-gallery-text{
+        width: 354px;
+        height: 294px;
+        padding-top: 49px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .blye-text{
+        text-align: inherit;
+    }
+
+    .photo-item{
+        width: 354px;
+        height: 404px;
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    .photo-item.kostil{
+        height: 440px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer .logo{
+        margin-left: 40px;
+        text-align: center;
+    }
+
+    .footer{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .map{
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    
+    .contact{
+        text-align: inherit;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    .footer-box-link-btn{
+        display: flex;
+    }
+
+    .box-footer{
+        margin-top: 0px;
+    }
+
+    .mailing{
+        text-align: center;
+    }
+
+    .btn-footer{
+        display: block;
+        margin-left: 215px;
+        margin-top: 20px;
+    }
+
+    .footer-clases{
+        font-size: 14px;
+        line-height: 1.333;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .container-footer{
+        padding: 60px 89px 60px 76px;
+    }
+
+    .social-footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .box-footer{
+        margin-top: 0px;
+        margin-left: 165px;
+    }
 }
