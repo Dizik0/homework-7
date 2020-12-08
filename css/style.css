@@ -103,7 +103,6 @@ h1, h2, h3, ul, p{
     line-height: 1.142;
     letter-spacing: 0.02em;
     text-decoration: none;
-    margin-right: 50px;
     position: relative;
     transition-duration: 300ms;
 }    
@@ -176,12 +175,13 @@ h1, h2, h3, ul, p{
 .screen-box{
     position: relative;
     display: none;
+    
 }
 
 .screen-box-modal{
     position: absolute;
      position: fixed;
-    width: 480px;
+    width: 100%;
     height: 453px;
     left: 50%;
     transform: translate(-50%, 0%) scale(1);
@@ -206,7 +206,6 @@ h1, h2, h3, ul, p{
 
 .link-svg{
     margin-bottom: 16px;
-    margin-right: 60px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.166;
@@ -303,6 +302,10 @@ h1, h2, h3, ul, p{
     background-color: var(--background-color-white);
     border: none;
     justify-content: flex-end;
+}
+
+.screen-box.is-open{
+    display: block;
 }
 
 
@@ -413,16 +416,10 @@ h1, h2, h3, ul, p{
 
 .photo-occupation{
     margin-top: 50px;
-    /* margin-left: 30px; */
-    /* flex-basis: calc(100% / 3 - 30px); */
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
-
-/* .photo-occupation:nth-child(3n + 1){
-    margin-left: 0px;
-} */
 
 
 
@@ -560,10 +557,7 @@ h1, h2, h3, ul, p{
 }
 
 .link-clients-svg{
-   /* width: 170px; */
     height: 90px;
-    /* max-width: 170px;
-    max-height: 90px; */
     border: 1px solid #AFB1B8;
     display: flex;
     transition-duration: 300ms;
@@ -729,6 +723,29 @@ h1, h2, h3, ul, p{
     padding-bottom: 40px;
 }
 
+.btn-screen .btn-menu-close{
+    display: none;
+}
+
+.btn-screen.is-open .btn-menu-open{
+    display: none;
+}
+
+.btn-screen.is-open .btn-menu-close{
+    display: block;
+}
+
+.svg-btn-modal{
+    width: 24px;
+    height: 16px;
+    fill: var(--secondary-color-black);
+}
+
+.btn-screen:focus .svg-btn-modal,
+.btn-screen:hover .svg-btn-modal{
+    fill: var(--accent-color-blue);
+}
+
 .text-modal{
     font-size: 20px;
     line-height: 1.15;
@@ -828,7 +845,6 @@ h1, h2, h3, ul, p{
     fill: var(--accent-color-blue);
     transition-duration: 300ms;
 }
-
 
 .btn-footer{
     position: relative;
@@ -934,7 +950,7 @@ input[type="checkbox"] {
         width: 768px;
     }
 
-    .screen-box{
+    .screen-box.container{
         display: none;
     }
     
@@ -954,6 +970,10 @@ input[type="checkbox"] {
     .nav-contact{
         display: block;
         align-items: center;
+    }
+
+    .nav-text{
+        margin-right: 50px;
     }
 
     .text-nav{

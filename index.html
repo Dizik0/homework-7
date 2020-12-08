@@ -46,10 +46,16 @@
             </li>
           </ul>
         </div>
-        <button class="btn-screen">X</button>
+        <button class="btn-screen is-open" data-menu-button>
+          <svg class="svg-btn-modal"
+          aria-label="Переключатель мобильного меню">
+            <use class="btn-menu-open" href="/photo/sprite/symbol-defs-menu.svg#menu-open"></use>
+            <use class="btn-menu-close" href="/photo/sprite/symbol-defs-menu.svg#menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <div class="screen-box">
+    <div class="screen-box is-open container" data-menu> 
       <div class="screen-box-modal">
         <ul class="menu-screen">
           <li class="focus-studio nav-text">
@@ -414,5 +420,6 @@
       </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   </body>
 </html>
